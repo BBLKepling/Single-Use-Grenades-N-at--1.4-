@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Single Use Grenades N'at (1.4)</name>
+  <author>bblkepling</author>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <packageId>bblkepling.singleuse.gnat</packageId>
+  <description>Single use grenades and throwables as a standalone functional example for the GNAT Framework.</description>
+  <modDependencies>
+    <li>
+      <packageId>bblkepling.framework.gnat</packageId>
+	  <displayName>GNAT Framework</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2982078947</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>
