@@ -50,7 +50,7 @@
           <VWE_Throwing_Rocks>5~10</VWE_Throwing_Rocks>
         </generateEquip>
       </li>
-      <!-- <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> -->  
+      <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> 
     </value>
   </Operation>
 

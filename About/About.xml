@@ -14,4 +14,9 @@
       <steamWorkshopUrl>steam://url/CommunityFilePage/2982078947</steamWorkshopUrl>
     </li>
   </modDependencies>
+  <loadAfter>
+    <li>VanillaExpanded.VWEG</li>
+    <li>hlx.ReinforcedMechanoids2</li>
+    <li>mosi.FirefoamThings</li>
+  </loadAfter>
 </ModMetaData>

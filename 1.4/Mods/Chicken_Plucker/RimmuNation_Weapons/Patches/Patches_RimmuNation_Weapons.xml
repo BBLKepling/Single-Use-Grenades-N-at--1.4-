@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]/recipeMaker</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]</xpath>
+      <value>
+        <recipeMaker />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]/recipeMaker</xpath>
+    <value>
+      <productCount>10</productCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]</xpath>
+    <value>
+      <stackLimit>10</stackLimit>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]/statBases</xpath>
+    <value>
+      <MarketValue>32</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.1</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>GNATFramework.Verb_LaunchProjectileOneUse</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <RNThrown_M84Stun_Grenade>5~10</RNThrown_M84Stun_Grenade>
+        </generateEquip>
+      </li>
+      <!-- <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> -->
+    </value>
+  </Operation>
+  
+</Patch>

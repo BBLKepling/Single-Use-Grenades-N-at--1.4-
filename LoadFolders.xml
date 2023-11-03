@@ -5,7 +5,7 @@
       <!-- Vanilla -->
 
         <li>1.4</li>
-		
+
       <!-- Ludeon -->
 
         <li IfModActive="Ludeon.RimWorld.Royalty">1.4/Mods/Ludeon/Royalty</li>
@@ -22,10 +22,18 @@
         <li IfModActive="VanillaExpanded.VWEG">1.4/Mods/Vanilla_Expanded/VWE_Grenades</li>
         <li IfModActive="VanillaExpanded.VWENL">1.4/Mods/Vanilla_Expanded/VWE_NonLethal</li>
         <li IfModActive="VanillaExpanded.VWETB">1.4/Mods/Vanilla_Expanded/VWE_Tribal</li>
-		
+
+      <!-- Chicken Plucker -->
+
+        <li IfModActive="CP.RimmuNation.2.Weapons">1.4/Mods/Chicken_Plucker/RimmuNation_Weapons</li>
+ 
       <!-- Eccentric Tech -->
 
         <li IfModActive="Aelanna.EccentricTech.Flares2">1.4/Mods/Eccentric_Tech/ET_Flares</li>
+ 
+      <!-- Helixien -->
+
+        <li IfModActive="hlx.ReinforcedMechanoids2">1.4/Mods/Helixien/ReinforcedMechanoid2</li>
  
       <!-- LimeTreeSnake -->
 
@@ -35,6 +43,10 @@
       <!-- Tyrannical Elmo -->
 
         <li IfModActive="TyrannicalElmo.IndustrialArmory">1.4/Mods/Tyrannical_Elmo/IndustrialArmory</li>
+
+      <!-- Rimsenal -->
+
+        <li IfModActive="rimsenal.core">1.4/Mods/Rimsenal/Core</li>
 
       <!-- Smoke Grenades & Rimsenal - Augmented Vanilla Pack since they share a defName -->
 
