@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[not(comps)][defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[not(comps)][defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]</xpath>
+      <value>
+        <comps />
+      </value>
+    </match>
+  </Operation>
+
+  <!-- This is to disable quality --> 
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]/comps</xpath>
+    <attribute>Inherit</attribute>
+    <value>false</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]/comps</xpath>
+    <value>
+        <!-- These are readded since comps is now Inherit="false" -->  
+        <li Class="CompProperties_Forbiddable"/>      
+        <li>
+          <compClass>CompEquippable</compClass>
+        </li>
+        <li Class="CompProperties_Styleable"></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <VWE_Throwing_Knives>5~10</VWE_Throwing_Knives>
+        </generateEquip>
+      </li>
+      <!-- <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> -->  
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Rocks"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <VWE_Throwing_Rocks>5~10</VWE_Throwing_Rocks>
+        </generateEquip>
+      </li>
+      <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[not(tradeTags) and *[self::defName="VWE_Throwing_Knives" or self::defName="VWE_Throwing_Rocks"]]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[not(tradeTags) and *[self::defName="VWE_Throwing_Knives" or self::defName="VWE_Throwing_Rocks"]]</xpath>
+      <value>
+        <tradeTags />
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]/tradeTags</xpath>
+    <value>
+      <li>GNAT_Throwable</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]/*[self::stuffCategories or self::costStuffCount or self::recipeMaker]</xpath>
+    <attribute>IsNull</attribute>
+    <value>true</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]</xpath>
+    <value>
+      <stackLimit>10</stackLimit>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]/statBases</xpath>
+    <value>
+      <MarketValue>10</MarketValue>
+    </value>
+  </Operation>
+<!--
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Rocks"]/statBases</xpath>
+    <value>
+      <MarketValue>1</MarketValue>
+    </value>
+  </Operation>
+-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Rocks"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.3</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.1</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]/smeltable</xpath>
+    <value>
+      <smeltable>false</smeltable>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives" or defName="VWE_Throwing_Rocks"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+  <!-- Projectile --> 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Rock" or defName="VWE_FlyingBlade"]</xpath>
+    <value>
+      <thingClass>GNATFramework.Bullet_Spawn</thingClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Rock"]/projectile</xpath>
+    <value>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+      <preExplosionSpawnThingDef>VWE_Throwing_Rocks</preExplosionSpawnThingDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_FlyingBlade"]/projectile</xpath>
+    <value>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+      <preExplosionSpawnThingDef>VWE_Throwing_Knives</preExplosionSpawnThingDef>
+    </value>
+  </Operation>
+
+</Patch>

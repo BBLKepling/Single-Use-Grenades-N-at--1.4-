@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GNAT_LTS_Pila.label>Pila</GNAT_LTS_Pila.label>
+  <GNAT_LTS_Throwing_Rocks.label>Throwing Rocks</GNAT_LTS_Throwing_Rocks.label>
+
+  <GNAT_LTS_Weapon_GrenadeFrag.label>Frag Grenade</GNAT_LTS_Weapon_GrenadeFrag.label>
+  <GNAT_LTS_Weapon_GrenadeEMP.label>EMP Grenade</GNAT_LTS_Weapon_GrenadeEMP.label>
+  <GNAT_LTS_Weapon_GrenadeMolotov.label>Molotov Cocktail</GNAT_LTS_Weapon_GrenadeMolotov.label>
+  <GNAT_LTS_Weapon_GrenadeTox.label>Tox Grenade</GNAT_LTS_Weapon_GrenadeTox.label>
+  <GNAT_LTS_FlashGrenade.label>Flash Grenade</GNAT_LTS_FlashGrenade.label>
+  <GNAT_LTS_SmokeGrenade.label>Smoke Grenade</GNAT_LTS_SmokeGrenade.label>
+  <GNAT_LTS_TearGasGrenade.label>Tear Gas Grenade</GNAT_LTS_TearGasGrenade.label>
+  <GNAT_LTS_GrenadeFirefoam.label>Firefoam Grenade</GNAT_LTS_GrenadeFirefoam.label>
+  <GNAT_LTS_GrenadeFlare.label>Flares</GNAT_LTS_GrenadeFlare.label>
+
+</LanguageData>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GNATFramework.ModFeatureDef>
+    <defName>BBLK_GNAT_EnableAll</defName>
+    <features>
+      <li>GenerateWithEquip</li>
+      <li>ShootOneUseInvCheck</li>
+    </features>
+  </GNATFramework.ModFeatureDef>
+
+</Defs>
