@@ -86,4 +86,44 @@
     </value>
   </Operation>
 
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag" or defName="Weapon_GrenadeEMP" or defName="Weapon_GrenadeMolotov"]/weaponTags</xpath>
+    <value>
+      <li>ammo_none</li>
+    </value>
+  </Operation>
+
+  <!-- Athena Compat -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Athena Framework</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+	  
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="BaseFragGrenadeProjectile"]/thingClass</xpath>
+          <value>
+            <thingClass>AthenaFramework.Projectile_ExplosiveFrag</thingClass>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[@Name="BaseFragGrenadeProjectile"]</xpath>
+          <value>
+            <li Class="AthenaFramework.FragGrenadeExtension">
+              <projCount>100</projCount>
+              <projAngle>3.6</projAngle>
+              <range>6</range>
+              <randomSpread>1</randomSpread>
+              <projectileDef>GNAT_Fragment</projectileDef>
+            </li>
+          </value>
+        </li>
+		
+      </operations>
+    </match>
+  </Operation>
+
 </Patch>

@@ -57,4 +57,12 @@
     </value>
   </Operation>
 
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare"]/weaponTags</xpath>
+    <value>
+      <li>ammo_none</li>
+    </value>
+  </Operation>
+
 </Patch>

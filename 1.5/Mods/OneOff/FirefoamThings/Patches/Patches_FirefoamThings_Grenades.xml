@@ -48,4 +48,12 @@
     </value>
   </Operation>
 
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Mosi_GrenadeFirefoam"]/weaponTags</xpath>
+    <value>
+      <li>ammo_none</li>
+    </value>
+  </Operation>
+
 </Patch>
