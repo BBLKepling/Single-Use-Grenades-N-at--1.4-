@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+  <Make_10xVFE_Harpoon.label>make harpoons x10</Make_10xVFE_Harpoon.label>
+  <Make_10xVFE_Harpoon.description>Make harpoons x10.</Make_10xVFE_Harpoon.description>
+  <Make_10xVFE_Harpoon.jobString>Making harpoons x10.</Make_10xVFE_Harpoon.jobString>
+
+  <Make_10xVFE_ThrowingAxe.label>make throwing axes x10</Make_10xVFE_ThrowingAxe.label>
+  <Make_10xVFE_ThrowingAxe.description>Make throwing axes x10.</Make_10xVFE_ThrowingAxe.description>
+  <Make_10xVFE_ThrowingAxe.jobString>Making throwing axes x10.</Make_10xVFE_ThrowingAxe.jobString>
+
+</LanguageData>

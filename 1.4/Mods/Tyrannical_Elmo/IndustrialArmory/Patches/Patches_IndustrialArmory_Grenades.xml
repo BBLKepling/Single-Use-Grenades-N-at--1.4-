@@ -90,7 +90,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="IA_Weapon_GrenadeSmoke" or defName="IA_Weapon_GrenadeFlash" or defName="IA_Weapon_GrenadeIncendiary"]/weaponTags</xpath>
     <value>
-      <li>ammo_none</li>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
     </value>
   </Operation>
 

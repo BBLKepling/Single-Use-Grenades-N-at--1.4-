@@ -48,4 +48,12 @@
     </value>
   </Operation>
 
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Weapon_FireBomb"]/weaponTags</xpath>
+    <value>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
+    </value>
+  </Operation>
+
 </Patch>

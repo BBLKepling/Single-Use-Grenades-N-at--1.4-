@@ -56,7 +56,7 @@
           <RNThrown_RGD5HEGrenade>5~10</RNThrown_RGD5HEGrenade>
         </generateEquip>
       </li>
-      <!-- <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> -->
+      <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" />
     </value>
   </Operation>
   
@@ -64,7 +64,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="RNThrown_RGD5HEGrenade"]/weaponTags</xpath>
     <value>
-      <li>ammo_none</li>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
     </value>
   </Operation>
 
@@ -131,7 +131,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]/weaponTags</xpath>
     <value>
-      <li>ammo_none</li>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
     </value>
   </Operation>
 

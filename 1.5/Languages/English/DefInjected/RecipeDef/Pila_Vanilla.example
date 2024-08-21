@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+  <Make_1xPila.label>make pila</Make_1xPila.label>
+  <Make_1xPila.description>Make pila.</Make_1xPila.description>
+  <Make_1xPila.jobString>Making pila.</Make_1xPila.jobString>
+
+  <Make_10xPila_Bulk.label>make pila x10</Make_10xPila_Bulk.label>
+  <Make_10xPila_Bulk.description>Make pila x10.</Make_10xPila_Bulk.description>
+  <Make_10xPila_Bulk.jobString>Making pila x10.</Make_10xPila_Bulk.jobString>
+
+</LanguageData>

@@ -137,7 +137,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="YP_BaegYa" or defName="JI_Dunder" or defName="GD_Bobcat" or defName="TE_Grief"]/weaponTags</xpath>
     <value>
-      <li>ammo_none</li>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
     </value>
   </Operation>
 

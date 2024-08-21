@@ -54,7 +54,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="LTS_Handgranat"]/weaponTags</xpath>
     <value>
-      <li>ammo_none</li>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
     </value>
   </Operation>
 

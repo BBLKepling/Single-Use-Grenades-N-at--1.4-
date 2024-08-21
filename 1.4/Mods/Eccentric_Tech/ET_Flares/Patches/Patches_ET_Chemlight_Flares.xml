@@ -83,7 +83,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare" or defName="Eccentric_Torch"]/weaponTags</xpath>
     <value>
-      <li>ammo_none</li>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
     </value>
   </Operation>
 
