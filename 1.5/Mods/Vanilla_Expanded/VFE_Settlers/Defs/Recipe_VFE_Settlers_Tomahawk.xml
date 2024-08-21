@@ -2,44 +2,47 @@
 <Defs>
 
   <RecipeDef>
-    <defName>Make_10xVFE_ThrowingAxe</defName>
-    <label>make throwing axes x10</label>
-    <description>Make throwing axes x10.</description>
-    <jobString>Making throwing axes x10.</jobString>
+    <defName>Make_10xVFES_Tomahawk</defName>
+    <label>make tomahawks x10</label>
+    <description>Make tomahawks x10.</description>
+    <jobString>Making tomahawks x10.</jobString>
     <workAmount>7200</workAmount>
     <workSkill>Crafting</workSkill>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_MakeBow</soundWorking>
-    <recipeUsers>
-      <li>FueledSmithy</li>
-      <li>ElectricSmithy</li>
-      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Workbench</li>
-    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
     <researchPrerequisite>Smithing</researchPrerequisite>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
-    <allowMixingIngredients>false</allowMixingIngredients>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>FueledSmithy</li>
+      <li>ElectricSmithy</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Workbench</li>
+    </recipeUsers>
     <ingredients>
       <li>
         <filter>
           <stuffCategoriesToAllow>
             <li>Metallic</li>
             <li>Woody</li>
+            <li>Stony</li>
           </stuffCategoriesToAllow>
         </filter>
-        <count>65</count>
+        <count>50</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <stuffCategoriesToAllow>
-        <li>Metallic</li>
         <li>Woody</li>
+        <li>Metallic</li>
+        <li>Stony</li>
       </stuffCategoriesToAllow>
     </fixedIngredientFilter>
     <products>
-      <VFE_ThrowingAxe>10</VFE_ThrowingAxe>
+      <VFES_Tomahawk>10</VFES_Tomahawk>
     </products>
   </RecipeDef>
 

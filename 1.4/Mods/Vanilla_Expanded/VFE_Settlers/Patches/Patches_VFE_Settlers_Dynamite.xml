@@ -58,4 +58,12 @@
     </value>
   </Operation>
 
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFES_Weapon_GrenadeDynamite"]/weaponTags</xpath>
+    <value>
+      <li>ammo_none</li>
+    </value>
+  </Operation>
+
 </Patch>

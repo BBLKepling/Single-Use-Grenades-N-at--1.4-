@@ -50,4 +50,12 @@
     </value>
   </Operation>
 
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="LTS_Handgranat"]/weaponTags</xpath>
+    <value>
+      <li>ammo_none</li>
+    </value>
+  </Operation>
+
 </Patch>

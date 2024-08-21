@@ -73,9 +73,7 @@
       <!-- Vanilla Expanded -->
 
         <li IfModActive="OskarPotocki.VFE.Classical">1.5/Mods/Vanilla_Expanded/VFE_Classical</li>
-        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.MedievalModule">1.5/Mods/Vanilla_Expanded/VFE_Medieval</li>
         <li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.5/Mods/Vanilla_Expanded/VFE_Settlers</li>
-        <li IfModActive="OskarPotocki.VFE.Vikings">1.5/Mods/Vanilla_Expanded/VFE_Vikings</li>
 
         <li IfModActive="VanillaExpanded.VWE">1.5/Mods/Vanilla_Expanded/VWE</li>
         <li IfModActive="VanillaExpanded.VWEG">1.5/Mods/Vanilla_Expanded/VWE_Grenades</li>
@@ -93,10 +91,6 @@
       <!-- LimeTreeSnake -->
 
         <li IfModActive="LimeTreeSnake.Ammunition">1.5/Mods/LTS/Ammunition</li>
-
-      <!-- Tyrannical Elmo -->
-
-        <li IfModActive="TyrannicalElmo.IndustrialArmory">1.5/Mods/Tyrannical_Elmo/IndustrialArmory</li>
 
       <!-- Rimsenal -->
 

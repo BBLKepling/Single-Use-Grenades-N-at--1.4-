@@ -41,6 +41,7 @@
     <autoAssignable>false</autoAssignable>
     <ammoDefs>
       <li>Weapon_GrenadeFrag</li>
+      <li MayRequire="CP.RimmuNation.2.Weapons">RNThrown_RGD5HEGrenade</li>
       <li MayRequire="LimeTreeSnake.Military">LTS_Handgranat</li>
     </ammoDefs>
     <includeWeaponDefs />

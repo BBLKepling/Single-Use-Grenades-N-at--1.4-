@@ -5,11 +5,15 @@
   <Operation Class="PatchOperationReplace">
     <xpath>
       Defs/ThingDef[
+      defName="Eccentric_Torch" or 
       defName="Eccentric_Flare" or 
       defName="EccentricChemlightRed" or 
+      defName="EccentricChemlightOrange" or 
+      defName="EccentricChemlightYellow" or 
       defName="EccentricChemlightGreen" or 
       defName="EccentricChemlightBlue" or 
-      defName="EccentricChemlightYellow"
+      defName="EccentricChemlightPurple" or 
+      defName="EccentricChemlightDarklight"
       ]/verbs/li/verbClass
     </xpath>
     <value>
@@ -20,9 +24,23 @@
         <!-- Reduce Mass -->
 
   <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Eccentric_Torch"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.1</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare"]/statBases/Mass</xpath>
     <value>
       <Mass>0.05</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Eccentric_Torch"]/statBases</xpath>
+    <value>
+      <MarketValue>3</MarketValue>
     </value>
   </Operation>
 
@@ -41,12 +59,16 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare"]</xpath>
+    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare" or defName="Eccentric_Torch"]/recipeMaker</xpath>
+    <value>
+      <productCount>10</productCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare" or defName="Eccentric_Torch"]</xpath>
     <value>
       <stackLimit>10</stackLimit>
-      <recipeMaker>
-        <productCount>10</productCount>
-      </recipeMaker>
     </value>
   </Operation>
 
@@ -54,6 +76,14 @@
     <xpath>Defs/ThingDef[defName="Eccentric_Flare"]</xpath>
     <value>
       <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" />
+    </value>
+  </Operation>
+
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare" or defName="Eccentric_Torch"]/weaponTags</xpath>
+    <value>
+      <li>ammo_none</li>
     </value>
   </Operation>
 
