@@ -5,7 +5,6 @@
   <Operation Class="PatchOperationReplace">
     <xpath>
       Defs/ThingDef[
-      defName="Eccentric_Torch" or 
       defName="Eccentric_Flare" or 
       defName="EccentricChemlightRed" or 
       defName="EccentricChemlightOrange" or 
@@ -24,23 +23,9 @@
         <!-- Reduce Mass -->
 
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="Eccentric_Torch"]/statBases/Mass</xpath>
-    <value>
-      <Mass>0.1</Mass>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare"]/statBases/Mass</xpath>
     <value>
       <Mass>0.05</Mass>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Eccentric_Torch"]/statBases</xpath>
-    <value>
-      <MarketValue>3</MarketValue>
     </value>
   </Operation>
 
@@ -59,14 +44,14 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare" or defName="Eccentric_Torch"]/recipeMaker</xpath>
+    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare"]/recipeMaker</xpath>
     <value>
       <productCount>10</productCount>
     </value>
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare" or defName="Eccentric_Torch"]</xpath>
+    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare"]</xpath>
     <value>
       <stackLimit>10</stackLimit>
     </value>
@@ -81,7 +66,7 @@
 
   <!-- Yayo Combat Compat -->
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare" or defName="Eccentric_Torch"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[@Name="EccentricChemlightBase" or defName="Eccentric_Flare"]/weaponTags</xpath>
     <value>
       <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
     </value>
