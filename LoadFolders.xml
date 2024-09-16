@@ -42,7 +42,7 @@
 
       <!-- Reload -->
 
-        <li IfModActive="zal.reload">1.4/Mods/Reload</li>
+        <li IfModActive="nkm.reload">1.4/Mods/Reload</li>
 
       <!-- Tyrannical Elmo -->
 
