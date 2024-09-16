@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ScenarioDef[defName="VFES_Bandits"]/scenario/parts/li[@Class="ScenPart_StartingThing_Defined" and thingDef="VFES_Weapon_GrenadeDynamite"]</xpath>
+    <value>
+      <count>10</count>
+    </value>
+  </Operation>
+
+</Patch>

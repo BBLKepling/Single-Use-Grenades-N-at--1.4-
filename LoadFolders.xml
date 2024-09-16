@@ -40,6 +40,10 @@
         <li IfModActive="LimeTreeSnake.Ammunition">1.4/Mods/LTS/Ammunition</li>
         <li IfModActive="LimeTreeSnake.Military">1.4/Mods/LTS/Military</li>
 
+      <!-- Reload -->
+
+        <li IfModActive="zal.reload">1.4/Mods/Reload</li>
+
       <!-- Tyrannical Elmo -->
 
         <li IfModActive="TyrannicalElmo.IndustrialArmory">1.4/Mods/Tyrannical_Elmo/IndustrialArmory</li>
@@ -91,6 +95,10 @@
       <!-- LimeTreeSnake -->
 
         <li IfModActive="LimeTreeSnake.Ammunition">1.5/Mods/LTS/Ammunition</li>
+
+      <!-- Reload -->
+
+        <li IfModActive="zal.reload">1.5/Mods/Reload</li>
 
       <!-- Rimsenal -->
 

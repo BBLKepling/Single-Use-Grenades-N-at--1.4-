@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/Reload.Defs.ReloadPresetDef[defName="Pila" or 
+	                                        defName="Weapon_GrenadeFrag" or 
+	                                        defName="Weapon_GrenadeMolotov" or 
+											defName="Weapon_GrenadeEMP" or 
+	                                        defName="Weapon_GrenadeTox" or 
+	                                        defName="Weapon_GrenadeSmoke" or 
+	                                        defName="VWE_SmokeGrenade" or 
+	                                        defName="VWE_FlashGrenade"]</xpath>
+    <value>
+      <ignore>true</ignore>
+    </value>
+  </Operation>
+
+</Patch>

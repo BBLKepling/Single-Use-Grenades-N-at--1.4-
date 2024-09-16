@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="OskarPotocki.VFE.Classical">
+        <defName>VFEC_Javelin</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+        <defName>VFES_Weapon_GrenadeDynamite</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+        <defName>VFES_Tomahawk</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="VanillaExpanded.VWENL">
+        <defName>VWE_TearGasGrenade</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="VanillaExpanded.VWETB">
+        <defName>VWE_Weapon_FireBomb</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="VanillaExpanded.VWETB">
+        <defName>VWE_Throwing_Shards</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Nex.Smoke.Grenades">
+        <defName>Weapon_GrenadeSmoke</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="bblkepling.SimpleThrowingStone">
+        <defName>GNAT_ThrowingStones</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="CP.RimmuNation.2.Weapons">
+        <defName>RNThrown_RGD5HEGrenade</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="CP.RimmuNation.2.Weapons">
+        <defName>RNThrown_M84Stun_Grenade</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="mosi.FirefoamThings">
+        <defName>Mosi_GrenadeFirefoam</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2">
+        <defName>Eccentric_Torch</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2">
+        <defName>Eccentric_Flare</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2">
+        <defName>EccentricChemlightRed</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2">
+        <defName>EccentricChemlightOrange</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2">
+        <defName>EccentricChemlightYellow</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2">
+        <defName>EccentricChemlightGreen</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2">
+        <defName>EccentricChemlightBlue</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2">
+        <defName>EccentricChemlightPurple</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Aelanna.EccentricTech.Flares2,Ludeon.RimWorld.Ideology">
+        <defName>EccentricChemlightDarklight</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="rimsenal.core">
+        <defName>YP_BaegYa</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="rimsenal.core">
+        <defName>JI_Dunder</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="rimsenal.core">
+        <defName>GD_Bobcat</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="rimsenal.core">
+        <defName>TE_Grief</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+</Defs>
