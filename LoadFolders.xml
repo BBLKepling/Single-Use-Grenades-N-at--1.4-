@@ -58,13 +58,13 @@
 
       <!-- One Offs -->
 
-        <li IfModActive="zal.antiscariagrenade">1.5/Mods/OneOff/AntiScariaGrenade</li>
+        <li IfModActive="zal.antiscariagrenade">1.4/Mods/OneOff/AntiScariaGrenade</li>
 
-        <li IfModActive="zal.avg">1.5/Mods/OneOff/AugmentedVanillaGrenades</li>
+        <li IfModActive="zal.avg">1.4/Mods/OneOff/AugmentedVanillaGrenades</li>
 
-        <li IfModActive="Supes.ChristmasWeapons">1.5/Mods/OneOff/ChristmasWeapons</li>
+        <li IfModActive="Supes.ChristmasWeapons">1.4/Mods/OneOff/ChristmasWeapons</li>
 
-        <li IfModActive="zal.FFGrenades">1.5/Mods/OneOff/FFGrenades</li>
+        <li IfModActive="zal.FFGrenades">1.4/Mods/OneOff/FFGrenades</li>
 
         <li IfModActive="mosi.FirefoamThings">1.4/Mods/OneOff/FirefoamThings</li>
 
