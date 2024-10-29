@@ -31,7 +31,7 @@
         <ignore>true</ignore>
     </Reload.Defs.ReloadPresetDef>
 
-    <Reload.Defs.ReloadPresetDef MayRequire="Nex.Smoke.Grenades">
+    <Reload.Defs.ReloadPresetDef MayRequireAnyOf="rimsenal.EVP,Nex.Smoke.Grenades">
         <defName>Weapon_GrenadeSmoke</defName>
         <ignore>true</ignore>
     </Reload.Defs.ReloadPresetDef>
@@ -118,6 +118,36 @@
 
     <Reload.Defs.ReloadPresetDef MayRequire="rimsenal.core">
         <defName>TE_Grief</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="zal.antiscariagrenade">
+        <defName>ASG_Weapon_AntiScariaGrenade</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="zal.avg">
+        <defName>AWG_M18_Grenade</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="zal.avg">
+        <defName>AWG_MK13_Grenade</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="zal.avg">
+        <defName>AWG_RGO_Grenade</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="zal.FFGrenades">
+        <defName>Weapon_GrenadeExtinguisher</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="Supes.ChristmasWeapons">
+        <defName>Weapon_SupesCracker</defName>
         <ignore>true</ignore>
     </Reload.Defs.ReloadPresetDef>
 

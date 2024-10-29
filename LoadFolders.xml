@@ -58,6 +58,14 @@
 
       <!-- One Offs -->
 
+        <li IfModActive="zal.antiscariagrenade">1.5/Mods/OneOff/AntiScariaGrenade</li>
+
+        <li IfModActive="zal.avg">1.5/Mods/OneOff/AugmentedVanillaGrenades</li>
+
+        <li IfModActive="Supes.ChristmasWeapons">1.5/Mods/OneOff/ChristmasWeapons</li>
+
+        <li IfModActive="zal.FFGrenades">1.5/Mods/OneOff/FFGrenades</li>
+
         <li IfModActive="mosi.FirefoamThings">1.4/Mods/OneOff/FirefoamThings</li>
 
         <li IfModActive="bblkepling.SimpleThrowingStone">1.4/Mods/OneOff/SimpleThrowingStones</li>
@@ -109,6 +117,14 @@
         <li IfModActive="rimsenal.EVP,Nex.Smoke.Grenades">1.5/Mods/Smoke_Grenades</li>
 
       <!-- One Offs -->
+
+        <li IfModActive="zal.antiscariagrenade">1.5/Mods/OneOff/AntiScariaGrenade</li>
+
+        <li IfModActive="zal.avg">1.5/Mods/OneOff/AugmentedVanillaGrenades</li>
+
+        <li IfModActive="Supes.ChristmasWeapons">1.5/Mods/OneOff/ChristmasWeapons</li>
+
+        <li IfModActive="zal.FFGrenades">1.5/Mods/OneOff/FFGrenades</li>
 
         <li IfModActive="mosi.FirefoamThings">1.5/Mods/OneOff/FirefoamThings</li>
 

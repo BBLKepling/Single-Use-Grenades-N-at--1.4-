@@ -12,7 +12,8 @@
       defName="VWE_Apparel_GrenadeTearGasBelt" or 
       defName="VWE_Apparel_DynamiteBelt" or 
       defName="VWE_Apparel_GrenadePlasmaImmolator" or 
-      defName="Mosi_Apparel_GrenadeFirefoamBelt"
+      defName="Mosi_Apparel_GrenadeFirefoamBelt" or 
+      defName="VWE_Apparel_GrenadeFirefoamBelt"
     ]/comps/li[@Class="CompProperties_Reloadable"]/ammoCountToRefill</xpath>
     <value>
       <ammoCountPerCharge>1</ammoCountPerCharge>
@@ -148,6 +149,24 @@
           <xpath>Defs/ThingDef[defName="Mosi_Apparel_GrenadeFirefoamBelt"]/costList/Mosi_GrenadeFirefoam</xpath>
           <value>
             <Mosi_GrenadeFirefoam>6</Mosi_GrenadeFirefoam>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Firefoam Grenades (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VWE_Apparel_GrenadeFirefoamBelt"]/costList/Weapon_GrenadeExtinguisher</xpath>
+          <value>
+            <Weapon_GrenadeExtinguisher>5</Weapon_GrenadeExtinguisher>
           </value>
         </li>
 

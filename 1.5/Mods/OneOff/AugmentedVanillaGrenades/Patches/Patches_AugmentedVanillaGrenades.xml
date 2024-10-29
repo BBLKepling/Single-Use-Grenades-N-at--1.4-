@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade"]/recipeMaker</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AWG_M18_Grenade"]</xpath>
+      <value>
+        <recipeMaker />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AWG_MK13_Grenade"]/recipeMaker</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AWG_MK13_Grenade"]</xpath>
+      <value>
+        <recipeMaker />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AWG_RGO_Grenade"]/recipeMaker</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AWG_RGO_Grenade"]</xpath>
+      <value>
+        <recipeMaker />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade" or defName="AWG_MK13_Grenade" or defName="AWG_RGO_Grenade"]/recipeMaker</xpath>
+    <value>
+      <productCount>10</productCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade" or defName="AWG_MK13_Grenade" or defName="AWG_RGO_Grenade"]</xpath>
+    <value>
+      <stackLimit>10</stackLimit>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade"]/statBases</xpath>
+    <value>
+      <MarketValue>51</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AWG_MK13_Grenade"]/statBases</xpath>
+    <value>
+      <MarketValue>29</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AWG_RGO_Grenade"]/statBases</xpath>
+    <value>
+      <MarketValue>33</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade" or defName="AWG_MK13_Grenade" or defName="AWG_RGO_Grenade"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.15</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade" or defName="AWG_MK13_Grenade" or defName="AWG_RGO_Grenade"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>GNATFramework.Verb_LaunchProjectileOneUse</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <AWG_M18_Grenade>5~10</AWG_M18_Grenade>
+        </generateEquip>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AWG_MK13_Grenade"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <AWG_MK13_Grenade>5~10</AWG_MK13_Grenade>
+        </generateEquip>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="AWG_RGO_Grenade"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <AWG_RGO_Grenade>5~10</AWG_RGO_Grenade>
+        </generateEquip>
+      </li>
+    </value>
+  </Operation>
+
+  <!-- Yayo Combat Compat -->
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade"]/weaponTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AWG_M18_Grenade"]</xpath>
+      <value>
+        <weaponTags />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AWG_MK13_Grenade"]/weaponTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AWG_MK13_Grenade"]</xpath>
+      <value>
+        <weaponTags />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AWG_RGO_Grenade"]/weaponTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AWG_RGO_Grenade"]</xpath>
+      <value>
+        <weaponTags />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AWG_M18_Grenade" or defName="AWG_MK13_Grenade" or defName="AWG_RGO_Grenade"]/weaponTags</xpath>
+    <value>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
+    </value>
+  </Operation>
+
+</Patch>
