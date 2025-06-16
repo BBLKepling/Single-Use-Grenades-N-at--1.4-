@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="YP_BaegYa" or defName="JI_Dunder" or defName="GD_Bobcat" or defName="TE_Grief"]/recipeMaker</xpath>
+    <value>
+      <productCount>10</productCount>
+    </value>
+  </Operation>
+<!-- This patch could also target @Name="BaseMakeableGrenade" -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="YP_BaegYa" or defName="JI_Dunder" or defName="GD_Bobcat" or defName="TE_Grief"]</xpath>
+    <value>
+      <stackLimit>10</stackLimit>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="YP_BaegYa"]/statBases</xpath>
+    <value>
+      <MarketValue>48</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="JI_Dunder"]/statBases</xpath>
+    <value>
+      <MarketValue>61</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GD_Bobcat"]/statBases</xpath>
+    <value>
+      <MarketValue>35</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TE_Grief"]/statBases</xpath>
+    <value>
+      <MarketValue>48</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="YP_BaegYa"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.112</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="JI_Dunder"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.431</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="GD_Bobcat"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.108</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="TE_Grief"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.13</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="YP_BaegYa" or defName="JI_Dunder"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>GNATFramework.Verb_LaunchProjectileOneUse</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="GD_Bobcat" or defName="TE_Grief"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="YP_BaegYa"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <YP_BaegYa>5~10</YP_BaegYa>
+        </generateEquip>
+      </li>
+      <!-- <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> -->
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="JI_Dunder"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <JI_Dunder>5~10</JI_Dunder>
+        </generateEquip>
+      </li>
+      <!-- <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> -->
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="GD_Bobcat"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <GD_Bobcat>5~10</GD_Bobcat>
+        </generateEquip>
+      </li>
+      <!-- <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> -->
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="TE_Grief"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <TE_Grief>5~10</TE_Grief>
+        </generateEquip>
+      </li>
+      <!-- <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" /> -->
+    </value>
+  </Operation>
+
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="YP_BaegYa" or defName="JI_Dunder" or defName="GD_Bobcat" or defName="TE_Grief"]/weaponTags</xpath>
+    <value>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
+    </value>
+  </Operation>
+
+</Patch>

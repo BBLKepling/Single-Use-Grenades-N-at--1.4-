@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]</xpath>
+      <value>
+        <comps />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- This is to disable quality --> 
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/comps</xpath>
+    <attribute>Inherit</attribute>
+    <value>false</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/comps</xpath>
+    <value>
+        <!-- These are readded since comps is now Inherit="false" -->  
+        <li Class="CompProperties_Forbiddable"/>      
+        <li>
+          <compClass>CompEquippable</compClass>
+        </li>
+        <li Class="CompProperties_Styleable"></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <GNAT_ThrowingStones>5~10</GNAT_ThrowingStones>
+        </generateEquip>
+      </li>
+      <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" />
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/tradeTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]</xpath>
+      <value>
+        <tradeTags />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/tradeTags</xpath>
+    <value>
+      <li>GNAT_Throwable</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]</xpath>
+    <value>
+      <stackLimit>10</stackLimit>
+    </value>
+  </Operation>
+
+  <!-- This is to disable auto generated recipes, and stuffable --> 
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/*[self::costList or self::recipeMaker or self::stuffCategories or self::costStuffCount]</xpath>
+    <attribute>IsNull</attribute>
+    <value>true</value>
+  </Operation>
+<!--
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/statBases</xpath>
+    <value>
+      <MarketValue>11</MarketValue>
+    </value>
+  </Operation>
+-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.1</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/smeltable</xpath>
+    <value>
+      <smeltable>false</smeltable>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="GNAT_ThrowingStones"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+  <!-- Projectile --> 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GNAT_Stoning"]</xpath>
+    <value>
+      <thingClass>GNATFramework.Bullet_Spawn</thingClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GNAT_Stoning"]/projectile</xpath>
+    <value>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+      <preExplosionSpawnThingDef>GNAT_ThrowingStones</preExplosionSpawnThingDef>
+    </value>
+  </Operation>
+
+</Patch>

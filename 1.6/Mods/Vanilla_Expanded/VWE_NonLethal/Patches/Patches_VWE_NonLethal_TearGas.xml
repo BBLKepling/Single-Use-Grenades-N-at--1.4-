@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/recipeMaker</xpath>
+    <value>
+      <productCount>10</productCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]</xpath>
+    <value>
+      <stackLimit>10</stackLimit>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/statBases</xpath>
+    <value>
+      <MarketValue>28</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.1</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>GNATFramework.Verb_LaunchProjectileOneUse</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <VWE_TearGasGrenade>5~10</VWE_TearGasGrenade>
+        </generateEquip>
+      </li>
+      <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" />
+    </value>
+  </Operation>
+  
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/weaponTags</xpath>
+    <value>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
+    </value>
+  </Operation>
+
+</Patch>

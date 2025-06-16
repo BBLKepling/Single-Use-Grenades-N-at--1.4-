@@ -131,4 +131,64 @@
         <li IfModActive="bblkepling.SimpleThrowingStone">1.5/Mods/OneOff/SimpleThrowingStones</li>
 
     </v1.5>
+    <v1.6>
+
+      <!-- Vanilla -->
+
+        <li>1.6</li>
+
+      <!-- Ludeon -->
+
+        <li IfModActive="Ludeon.RimWorld.Royalty">1.6/Mods/Ludeon/Royalty</li>
+        <li IfModActive="Ludeon.RimWorld.Biotech">1.6/Mods/Ludeon/Biotech</li>
+
+      <!-- Vanilla Expanded -->
+
+        <li IfModActive="OskarPotocki.VFE.Classical">1.6/Mods/Vanilla_Expanded/VFE_Classical</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.6/Mods/Vanilla_Expanded/VFE_Settlers</li>
+
+        <li IfModActive="VanillaExpanded.VWE">1.6/Mods/Vanilla_Expanded/VWE</li>
+        <li IfModActive="VanillaExpanded.VWEG">1.6/Mods/Vanilla_Expanded/VWE_Grenades</li>
+        <li IfModActive="VanillaExpanded.VWENL">1.6/Mods/Vanilla_Expanded/VWE_NonLethal</li>
+        <li IfModActive="VanillaExpanded.VWETB">1.6/Mods/Vanilla_Expanded/VWE_Tribal</li>
+
+      <!-- Chicken Plucker -->
+
+        <li IfModActive="CP.RimmuNation.2.Weapons">1.6/Mods/Chicken_Plucker/RimmuNation_Weapons</li>
+ 
+      <!-- Eccentric Tech -->
+
+        <li IfModActive="Aelanna.EccentricTech.Flares2">1.6/Mods/Eccentric_Tech/ET_Flares</li>
+ 
+      <!-- LimeTreeSnake -->
+
+        <li IfModActive="LimeTreeSnake.Ammunition">1.6/Mods/LTS/Ammunition</li>
+
+      <!-- Reload -->
+
+        <li IfModActive="zal.reload">1.6/Mods/Reload</li>
+
+      <!-- Rimsenal -->
+
+        <li IfModActive="rimsenal.core">1.6/Mods/Rimsenal/Core</li>
+
+      <!-- Smoke Grenades & Rimsenal - Augmented Vanilla Pack since they share a defName -->
+
+        <li IfModActive="rimsenal.EVP,Nex.Smoke.Grenades">1.6/Mods/Smoke_Grenades</li>
+
+      <!-- One Offs -->
+
+        <li IfModActive="zal.antiscariagrenade">1.6/Mods/OneOff/AntiScariaGrenade</li>
+
+        <li IfModActive="zal.avg">1.6/Mods/OneOff/AugmentedVanillaGrenades</li>
+
+        <li IfModActive="Supes.ChristmasWeapons">1.6/Mods/OneOff/ChristmasWeapons</li>
+
+        <li IfModActive="zal.FFGrenades">1.6/Mods/OneOff/FFGrenades</li>
+
+        <li IfModActive="mosi.FirefoamThings">1.6/Mods/OneOff/FirefoamThings</li>
+
+        <li IfModActive="bblkepling.SimpleThrowingStone">1.6/Mods/OneOff/SimpleThrowingStones</li>
+
+    </v1.6>
 </loadFolders>

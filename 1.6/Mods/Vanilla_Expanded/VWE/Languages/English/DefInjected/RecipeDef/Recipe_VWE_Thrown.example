@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+  <Make_10xVWE_Throwing_Knives.label>make throwing knives x10</Make_10xVWE_Throwing_Knives.label>
+  <Make_10xVWE_Throwing_Knives.description>Make throwing knives x10.</Make_10xVWE_Throwing_Knives.description>
+  <Make_10xVWE_Throwing_Knives.jobString>Making throwing knives x10.</Make_10xVWE_Throwing_Knives.jobString>
+
+  <Make_10xVWE_Throwing_Rocks.label>make throwing rocks x10</Make_10xVWE_Throwing_Rocks.label>
+  <Make_10xVWE_Throwing_Rocks.description>Make throwing rocks x10.</Make_10xVWE_Throwing_Rocks.description>
+  <Make_10xVWE_Throwing_Rocks.jobString>Making throwing rocks x10.</Make_10xVWE_Throwing_Rocks.jobString>
+
+</LanguageData>

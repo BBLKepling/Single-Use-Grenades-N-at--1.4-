@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Torch Pack -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EccentricFlares_TorchPack"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+    <value>
+      <ammoDef>Eccentric_Torch</ammoDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EccentricFlares_TorchPack"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoCountToRefill</xpath>
+    <value>
+      <ammoCountToRefill>6</ammoCountToRefill>
+    </value>
+  </Operation>
+
+  <!-- Flare Pack -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EccentricFlares_FlarePack"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+    <value>
+      <ammoDef>Eccentric_Flare</ammoDef>
+    </value>
+  </Operation>
+
+  <!-- Chemlight Pack -->
+<!--
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EccentricFlares_ChemlightPack"]/comps[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+    <value>
+      <ammoDef>Eccentric_Torch</ammoDef>
+    </value>
+  </Operation>
+-->
+  <!-- Flare Gun Pack -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EccentricFlares_FlareGunPack"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+    <value>
+      <ammoDef>Eccentric_Flare</ammoDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EccentricFlares_FlareGunPack"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoCountToRefill</xpath>
+    <value>
+      <ammoCountToRefill>12</ammoCountToRefill>
+    </value>
+  </Operation>
+
+</Patch>
