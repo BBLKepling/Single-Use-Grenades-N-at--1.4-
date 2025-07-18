@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeSmoke" or defName="Weapon_IAGrenadeFlash" or defName="Weapon_IAGrenadeIncendiary"]/recipeMaker</xpath>
+    <value>
+      <productCount>10</productCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeSmoke" or defName="Weapon_IAGrenadeFlash" or defName="Weapon_IAGrenadeIncendiary"]</xpath>
+    <value>
+      <stackLimit>10</stackLimit>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeSmoke"]/statBases/MarketValue</xpath>
+    <value>
+      <MarketValue>15</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeFlash"]/statBases/MarketValue</xpath>
+    <value>
+      <MarketValue>20</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeIncendiary"]/statBases/MarketValue</xpath>
+    <value>
+      <MarketValue>22</MarketValue>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeSmoke" or defName="Weapon_IAGrenadeFlash" or defName="Weapon_IAGrenadeIncendiary"]/statBases/Mass</xpath>
+    <value>
+      <Mass>0.1</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeSmoke" or defName="Weapon_IAGrenadeFlash" or defName="Weapon_IAGrenadeIncendiary"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>GNATFramework.Verb_LaunchProjectileOneUse</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeSmoke"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <Weapon_IAGrenadeSmoke>5~10</Weapon_IAGrenadeSmoke>
+        </generateEquip>
+      </li>
+      <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" />
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeFlash"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <Weapon_IAGrenadeFlash>5~10</Weapon_IAGrenadeFlash>
+        </generateEquip>
+      </li>
+      <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" />
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeIncendiary"]</xpath>
+    <value>
+      <li Class="GNATFramework.GenerateWithEquip">
+        <generateEquip>
+          <Weapon_IAGrenadeIncendiary>5~10</Weapon_IAGrenadeIncendiary>
+        </generateEquip>
+      </li>
+      <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension" />
+    </value>
+  </Operation>
+
+  <!-- Yayo Combat Compat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Weapon_IAGrenadeSmoke" or defName="Weapon_IAGrenadeFlash" or defName="Weapon_IAGrenadeIncendiary"]/weaponTags</xpath>
+    <value>
+      <li MayRequire="Mlie.YayosCombat3">ammo_none</li>
+    </value>
+  </Operation>
+
+</Patch>

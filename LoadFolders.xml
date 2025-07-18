@@ -168,6 +168,10 @@
 
         <li IfModActive="zal.reload">1.6/Mods/Reload</li>
 
+      <!-- Tyrannical Elmo -->
+
+        <li IfModActive="zal.ialite">1.6/Mods/Tyrannical_Elmo/IndustrialArmory</li>
+
       <!-- Rimsenal -->
 
         <li IfModActive="rimsenal.core">1.6/Mods/Rimsenal/Core</li>

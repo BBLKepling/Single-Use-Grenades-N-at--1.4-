@@ -67,6 +67,7 @@
     <autoAssignable>false</autoAssignable>
     <ammoDefs>
       <li>Weapon_GrenadeMolotov</li>
+      <li MayRequire="zal.ialite">Weapon_IAGrenadeIncendiary</li>
     </ammoDefs>
     <includeWeaponDefs />
     <excludeWeaponDefs />
@@ -86,20 +87,21 @@
     <ammoWeight>5</ammoWeight>
   </Ammunition.Defs.AmmoCategoryDef>
 
-  <Ammunition.Defs.AmmoCategoryDef MayRequire="VanillaExpanded.VWE">
+  <Ammunition.Defs.AmmoCategoryDef MayRequireAnyOf="VanillaExpanded.VWE,zal.ialite">
     <defName>GNAT_LTS_FlashGrenade</defName>
     <label>Flash Grenades</label>
     <ammoType>Industrial</ammoType>
     <autoAssignable>false</autoAssignable>
     <ammoDefs>
       <li MayRequire="VanillaExpanded.VWE">VWE_FlashGrenade</li>
+      <li MayRequire="zal.ialite">Weapon_IAGrenadeFlash</li>
     </ammoDefs>
     <includeWeaponDefs />
     <excludeWeaponDefs />
     <ammoWeight>5</ammoWeight>
   </Ammunition.Defs.AmmoCategoryDef>
 
-  <Ammunition.Defs.AmmoCategoryDef MayRequireAnyOf="VanillaExpanded.VWE,rimsenal.EVP,Nex.Smoke.Grenades">
+  <Ammunition.Defs.AmmoCategoryDef MayRequireAnyOf="VanillaExpanded.VWE,rimsenal.EVP,Nex.Smoke.Grenades,zal.ialite">
     <defName>GNAT_LTS_SmokeGrenade</defName>
     <label>Smoke Grenades</label>
     <ammoType>Industrial</ammoType>
@@ -107,6 +109,7 @@
     <ammoDefs>
       <li MayRequire="VanillaExpanded.VWE">VWE_SmokeGrenade</li>
       <li MayRequireAnyOf="rimsenal.EVP,Nex.Smoke.Grenades">Weapon_GrenadeSmoke</li>
+      <li MayRequire="zal.ialite">Weapon_IAGrenadeSmoke</li>
     </ammoDefs>
     <includeWeaponDefs />
     <excludeWeaponDefs />
