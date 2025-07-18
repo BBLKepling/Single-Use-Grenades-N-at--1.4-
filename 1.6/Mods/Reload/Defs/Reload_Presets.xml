@@ -151,4 +151,19 @@
         <ignore>true</ignore>
     </Reload.Defs.ReloadPresetDef>
 
+    <Reload.Defs.ReloadPresetDef MayRequire="zal.ialite">
+        <defName>Weapon_IAGrenadeSmoke</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="zal.ialite">
+        <defName>Weapon_IAGrenadeFlash</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
+    <Reload.Defs.ReloadPresetDef MayRequire="zal.ialite">
+        <defName>Weapon_IAGrenadeIncendiary</defName>
+        <ignore>true</ignore>
+    </Reload.Defs.ReloadPresetDef>
+
 </Defs>
